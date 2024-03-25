@@ -20,6 +20,10 @@ const FlexboxExample = ({ navigation }) => {
       <Pressable title="Alterar Cor" style={styles.Pressable} onPress={changeColor}>
       </Pressable>
       <Pressable title="Voltar para Tela 1" onPress={() => navigation.navigate('Screen1')} />
+      <Pressable title="Ir Para flexExemplo" onPress={() => navigation.navigate('Screen3', {
+        imageUrl:'https://img.elo7.com.br/product/zoom/1F17541/adesivo-de-parede-infantil-colorido-bolinhas-circulos-quarto-bebe.jpg', 
+        boxColors:['red', 'green', 'blue']
+      })} />
     </View>
   );
 };
